@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Facebook</div>
+        <input type="text" placeholder="Search Facebook">
+        <button>Login</button>
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-user-friends"></i> Friends</li>
+                <li><i class="fas fa-comment"></i> Messages</li>
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </div>
+        
+        <!-- Feed Section -->
+        <div class="feed">
+            <div class="post-box">
+                <img src="profile.jpg" alt="User" class="profile-pic">
+                <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+                <button onclick="postMessage()">Post</button>
+            </div>
+            <div id="posts"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
